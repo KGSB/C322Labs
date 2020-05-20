@@ -6,7 +6,7 @@ matrix_gen: matrix_gen.c
 
 matrix_add: matrix_add.c
 	gcc -c matrix_add.c
-	gcc -o matrix_add matrix_add.c -Wall -Wextra
+	gcc -o matrix_add matrix_add.c -lrt -Wall -Wextra
 
 clean: matrix_gen.o matrix_add.o
 	rm matrix_gen.o
